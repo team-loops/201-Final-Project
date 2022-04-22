@@ -1,5 +1,9 @@
 # team-loops
 
+[Trello Board Link](https://trello.com/b/th8LnLjG/team-loops)
+
+[WIP: Presentation Deck](https://docs.google.com/presentation/d/1wDn2kEd8KHjdBjQ5EBFLmK_CdjJ_sd5etTjzk7XwjAQ/edit#slide=id.g2accd1c413_1_44)
+
 ## Members
 
 - Ben Choe
@@ -55,7 +59,7 @@ Speak with Audrey.
 
 - What hours will you be available to communicate?
 
-Daily check-in at 5.
+Daily check-in at 5pm Pacific Time Zone.
 
 - What platforms will you use to communicate (ie. Slack, phone …)?
 
@@ -63,7 +67,7 @@ Slack is main form of communication.
 
 - How often will you take breaks?
 
-Once and hour for 10 minutes.
+Once an hour for 10 minutes.
 
 - What is your plan if you start to fall behind?
 
@@ -83,4 +87,14 @@ Continue to treat each other with respect.
 
 ### Work Plan
 
--
+We will assess and assign tasks during our daily meeting at 5pm Pacific. We will use Slack and remo to meet and discuss in between.
+
+### Git Process
+
+All files related to the project will live in our team Github repo. The project management board will be located on Trello, and a link is available on Github.
+
+All team members have cloned the project repo in their personal projects folder.
+
+All teammembers will review the pull request to the main branch at the end of the work day.
+
+Dylan and Kyel will approve merge requests to main once daily during the daily team meeting.
