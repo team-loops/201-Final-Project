@@ -4,6 +4,11 @@
 
 [WIP: Presentation Deck](https://docs.google.com/presentation/d/1wDn2kEd8KHjdBjQ5EBFLmK_CdjJ_sd5etTjzk7XwjAQ/edit#slide=id.g2accd1c413_1_44)
 
+## Deadlines
+
+Mock Presentation Date: Thursday 4/28 at 5pm Pacific.
+Final Presentation Date: April 29, 2022
+
 ## Members
 
 - Ben Choe
