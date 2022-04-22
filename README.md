@@ -2,7 +2,7 @@
 
 [Trello Board Link](https://trello.com/b/th8LnLjG/team-loops)
 
-[WIP: Presentation Deck](https://docs.google.com/presentation/d/1wDn2kEd8KHjdBjQ5EBFLmK_CdjJ_sd5etTjzk7XwjAQ/edit#slide=id.g2accd1c413_1_44)
+[WIP: Presentation Deck](https://docs.google.com/presentation/d/13UJRMsdqCttUrB8j-DjDg0G2osM-tSj-Pag_4VZMDjI/edit#slide=id.g125996a3fb6_0_127)
 
 ## Deadlines
 
