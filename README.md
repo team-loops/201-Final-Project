@@ -6,8 +6,8 @@
 
 ## Deadlines
 
-Mock Presentation Date: Thursday 4/28 at 5pm Pacific.
-Final Presentation Date: April 29, 2022
+- Mock Presentation Date: Thursday 4/28 at 5pm Pacific.
+- Final Presentation Date: April 29, 2022
 
 ## Members
 
