@@ -1,10 +1,12 @@
-**HELP ME FIND WHAT TO WATCH**
+# HELP ME FIND WHAT TO WATCH
+
+## MVP
 
 - We want to make an app that will help people decide what to watch on TV.
 
 What problem are we solving?
 
-There are seemingly millions of movies and shows out there these days. It can be easy to find yourself looking for something to watch on TV rather than actually relaxing to enjoy a movie or show. We are looking to change that by providing users with an app that will present movies and TVs that we know they'll love. No more searching because we make the hard work easy.
+There are seemingly millions of movies and shows out there these days. It can be easy to find yourself looking for something to watch on TV rather than actually relaxing to enjoy a movie or show. We are looking to change that by providing users with an app that will present movies and TVs that we know they'll love. No more searching because we make the hard work easy. 
 
 What will be our MVP?
 
