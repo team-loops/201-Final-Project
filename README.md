@@ -2,6 +2,10 @@
 
 [Trello Board Link](https://trello.com/b/th8LnLjG/team-loops)
 
+[Wireframe](https://www.figma.com/file/at72rZR08hbLJHwdvZdaKp/team-loops?node-id=0%3A1)
+
+[Domain Model](https://lucid.app/lucidchart/ef049ad0-aa31-479f-a15a-59507df6d488/edit?invitationId=inv_923e738e-2fcb-48d1-94c1-27479c612050)
+
 [WIP: Presentation Deck](https://docs.google.com/presentation/d/13UJRMsdqCttUrB8j-DjDg0G2osM-tSj-Pag_4VZMDjI/edit#slide=id.g125996a3fb6_0_127)
 
 ## Deadlines
