@@ -107,3 +107,15 @@ All team members have cloned the project repo in their personal projects folder.
 All teammembers will review the pull request to the main branch at the end of the work day.
 
 Dylan and Kyel will approve merge requests to main once daily during the daily team meeting.
+
+
+## JavaScript Functions
+
+| function                         | input(s)                                                   | process                                                                                    | output(s)                               |
+|----------------------------------|------------------------------------------------------------|--------------------------------------------------------------------------------------------|-----------------------------------------|
+| Consturctor function new Movie() | name, mediaType, genre, year                               | creates new Movie Object                                                                   | new Movie                               |
+| addMovieToLocalStorage           | Movie Object                                               | stringifies Movie Object, adds to local storage                                            | localStorage entry                      |
+| selectHandler()                  | HTML event                                                 | takes event.tgt and adds to moviesArray                                                    | entry to moviesArray                    |
+| renderMediaForLater()            | mediaArray                                                 | renders saved for later list to DOM                                                        | HTMLCollection; canvas#watch-later-list |
+| quizFormHandler()                | event, dom element input:prefGenreprefMediaType,prefDecade | takes preferences and filters list from localStorage, parses, and presents to User in HTML | DOM list element                        |
+| selectMediaHandler()             | event                                                      | takes selected movie/show from filtered list and adds to localStorage                      | localStorage entry                      |
