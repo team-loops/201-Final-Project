@@ -7,7 +7,20 @@ body {
   margin-right: auto;
 }
 
-header {
+nav {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: white;
+  padding: 5px 10px 5px 10px;
+}
+
+#nav-links>a {
+  color: white;
+  font-size: large;
+}
+
+h1 {
+  font-size: x-large;
 }
