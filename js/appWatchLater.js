@@ -25,7 +25,7 @@ let mediaArray = [];
 
 
 //--------------------CONSTRUCTOR METHODS
-const Media(name, mediaType, genre, year, src='',alt='',href='') {
+function Media(name, mediaType, genre, year, src='',alt='',href='') {
     this.name = name,
     this.mediaType = mediaType,
     this.genre = genre,
