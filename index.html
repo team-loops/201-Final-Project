@@ -20,50 +20,57 @@
   <main>
     <form id="movie-quiz">
       <fieldset>
-        <legend class="leg">Let us know what you are in the mood for</legend>
+        <legend class="leg">Answer the questions below to recieve your customized suggestions!</legend>
+        
+        <div id="boxparent">
+          <div id="boxdiv">
           <section class="box"> 
-            <h2>Movie or TV Show</h2>
-  
-            <input type="radio" name="media-type" value="">
-            <label for="prefMediaType">Movie</label>
-  
-            <input type="radio" name="media-type" value="">
-            <label for="prefMediaType">TV Show</label>
-  
-          </section>
-          <section class="box">
-            <h2>Preferred Genre</h2>
 
-            <input type="radio" name="genre" value="">
-            <label for="prefGenre">Comedy</label>
-
-            <input type="radio" name="genre" value="">
-            <label for="prefGenre">Drama</label>
-
-            <input type="radio" name="genre" value="">
-            <label for="prefGenre">Action</label>
-
-            <input type="radio" name="genre" value="">
-            <label for="prefGenre">Sci-Fi</label>
-
-          </section>
-          <section class="box"> 
-            <h2>Release Decade</h2>
-
-            <input type="radio" name="date" value="">
-            <label for="prefDecade">1980s</label>
-
-            <input type="radio" name="date" value="">
-            <label for="prefDecade">1990s</label>
-
-            <input type="radio" name="date" value="">
-            <label for="prefDecade">2000s</label>
-
-            <input type="radio" name="date" value="">
-            <label for="prefDecade">2010s</label>
-
-          </section>
-          <button type="submit"class="active" onclick="quizFormHandler()">See Results</button>
+              <h2>Movie or TV Show</h2>
+              
+              <input type="radio" name="media-type" value="">
+              <label for="prefMediaType">Movie</label>
+              
+              <input type="radio" name="media-type" value="">
+              <label for="prefMediaType">TV Show</label>
+              
+            </section>
+            <section class="box">
+              <h2>Preferred Genre</h2>
+              
+              <input type="radio" name="genre" value="">
+              <label for="prefGenre">Comedy</label>
+              
+              <input type="radio" name="genre" value="">
+              <label for="prefGenre">Drama</label>
+              
+              <input type="radio" name="genre" value="">
+              <label for="prefGenre">Action</label>
+              
+              <input type="radio" name="genre" value="">
+              <label for="prefGenre">Sci-Fi</label>
+              
+            </section>
+            <section class="box"> 
+              <h2>Release Decade</h2>
+              
+              <input type="radio" name="date" value="">
+              <label for="prefDecade">1980s</label>
+              
+              <input type="radio" name="date" value="">
+              <label for="prefDecade">1990s</label>
+              
+              <input type="radio" name="date" value="">
+              <label for="prefDecade">2000s</label>
+              
+              <input type="radio" name="date" value="">
+              <label for="prefDecade">2010s</label>
+              
+            </section>
+          </div>
+            
+            <button type="submit"class="active" onclick="quizFormHandler()">See Results</button>
+        </div>
       </fieldset>
     </form>
     <canvas id="quiz-results"></canvas>
