@@ -62,6 +62,15 @@ h1 {
 #movie-quiz {
   
 }
+#boxparent{
+  display: flex;
+  flex-direction: column;
+}
+#boxdiv{
+  display: flex;
+  margin: auto;
+
+}
 .box {
   height: 200px;
   width: 250px;
@@ -70,11 +79,11 @@ h1 {
   padding: 60px 0 40px;
   border: solid 5px #E60576;
   margin: 0;
-  display: inline-block;
-  font-size:large;
+  display:flex;
+  flex-direction: column;
+  font-size:larger;
   border-radius: 50px;
   text-align: center;
-  ;
   
 }
 .box {
@@ -91,24 +100,27 @@ h1 {
   
  
 }
-
+/* See results buttom */
 .active{
-  height: ;
-  width:;
+  margin: auto;
+  width: 200px;
   padding: 22px; ;
   color: #FACD3D;
- 
   background-color: transparent; 
-   
   border: 2px solid #E60576; 
-   
   border-radius: 5px; 
-   
   text-transform: uppercase; 
+ 
    
 }
 button:hover{
   background-color: #5626C4;
 
+}
+
+#buttonresults {
+  display:flex; 
+  margin: 0 auto;
+  text-align:center;
 }
 
