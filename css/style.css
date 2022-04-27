@@ -59,16 +59,14 @@ h1 {
   font-size: 1rem;
 }
 
-#movie-quiz {
-  
-}
 #boxparent{
   display: flex;
   flex-direction: column;
 }
-#boxdiv{
+.boxdiv{
   display: flex;
   margin: auto;
+  flex-wrap: wrap;
 
 }
 .box {
@@ -96,9 +94,8 @@ h1 {
   width: 500px;
   text-align: center;
   font-size: 25px;
-  color:#FACD3D ;
-  
- 
+  color:#FACD3D;
+  margin: auto;
 }
 /* See results buttom */
 .active{
@@ -123,4 +120,72 @@ button:hover{
   margin: 0 auto;
   text-align:center;
 }
+
+#dylanbox{
+  box-sizing: border-box;
+  float: left;
+  width: 45%;
+  padding: 40px;
+  padding-left:70px;
+  padding-right: 70px;
+  height: 475px;
+  margin:auto;
+  margin-right:30px;
+  margin-bottom: 70px;
+  background-color: #e1e1dd;
+  border: solid 5px #E60576;
+  line-height:2;
+  border-radius: 50px;
+}
+#benbox{
+  box-sizing: border-box;
+  float: left;
+  width: 45%;
+  padding: 40px;
+  padding-left:70px;
+  padding-right: 70px;
+  height: 475px;
+  margin:auto;
+  margin-right:30px;
+  margin-bottom: 70px;
+  background-color: #e1e1dd;
+  border: solid 5px #E60576;
+  line-height:2;
+  border-radius: 50px;
+}
+#kyelbox{
+  box-sizing: border-box;
+  float: left;
+  width: 45%;
+  padding: 40px;
+  padding-left:70px;
+  padding-right: 70px;
+  height: 475px;
+  margin:auto;
+  margin-right:30px;
+  margin-bottom: 70px;
+  background-color: #e1e1dd;
+  border: solid 5px #E60576;
+  line-height:2;
+  border-radius: 50px;
+}
+#denisbox{
+  box-sizing: border-box;
+  float: left;
+  width: 45%;
+  padding: 40px;
+  padding-left:70px;
+  padding-right: 70px;
+  height: 475px;
+  margin:auto;
+  margin-right:30px;
+  margin-bottom: 70px;
+  background-color: #e1e1dd;
+  border: solid 5px #E60576;
+  line-height:2;
+  border-radius: 50px;
+}
+
+
+
 
