@@ -70,8 +70,6 @@ function selectHandler(event) {
   }
 
   renderMedia();
-
-
-
+}
 
 //--------------------FUNCTION CALLS
