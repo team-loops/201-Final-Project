@@ -9,19 +9,19 @@
 <body>
   <header>
     <nav>
-      <h1>Movies for Later</h1>
-      <div id="nav-links">
-        <a href="index.html">Home</a>
-        <a href="pages/about.html">About</a>
-        <a href="pages/watchlater.html">Watch Later</a>
-      </div>
+      <h1>PRIME FLIX</h1>
+      <ul id="nav-links">
+       <li><a href="index.html"class="hover">Home</a></li>
+       <li><a href="pages/about.html"class="hover">About</a></li>
+       <li><a href="pages/watchlater.html"class="hover">Watch Later</a></li>
+      </ul>
     </nav>
   </header>
   <main>
     <form id="movie-quiz">
       <fieldset>
-        <legend>Let us know what you are in the mood for</legend>
-          <section> 
+        <legend class="leg">Let us know what you are in the mood for</legend>
+          <section class="box"> 
             <h2>Movie or TV Show</h2>
   
             <input type="radio" name="media-type" value="">
@@ -31,7 +31,7 @@
             <label for="prefMediaType">TV Show</label>
   
           </section>
-          <section>
+          <section class="box">
             <h2>Preferred Genre</h2>
 
             <input type="radio" name="genre" value="">
@@ -47,7 +47,7 @@
             <label for="prefGenre">Sci-Fi</label>
 
           </section>
-          <section> 
+          <section class="box"> 
             <h2>Release Decade</h2>
 
             <input type="radio" name="date" value="">
@@ -63,13 +63,13 @@
             <label for="prefDecade">2010s</label>
 
           </section>
-          <button type="submit">See Results</button>
+          <button type="submit"class="active">See Results</button>
       </fieldset>
     </form>
     <canvas id="movie-quiz-results"></canvas>
   </main>
   <footer>
-    <p>team-loops</p>
+    <cite>team-loops</cite>
   </footer>
 </body>
 </html>
