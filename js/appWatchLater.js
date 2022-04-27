@@ -2,7 +2,6 @@
 
 //--------------------GLOBAL VARIABLES/IMPORTS
 let mediaArray = [];
-let 
 
   
 
