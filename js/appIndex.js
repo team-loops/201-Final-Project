@@ -4,49 +4,49 @@
 
 
 
-  
 
 
-  
+
+
 //--------------------DOM REFERENCES
 
-  
 
-  
 
-  
+
+
+
 
 //--------------------CONSTRUCTORS
 
-  
 
-  
+
+
 
 
 
 //--------------------CONSTRUCTOR METHODS
 
-  
 
-  
 
-  
+
+
+
 
 //--------------------FUNCTIONS
 
-  
 
-  
 
-  
+
+
+
 
 //--------------------EVENT LISTENERS
 
-  
 
-  
 
-  
+
+
+
 
 //--------------------EVENT HANDLERS
 function selectHandler(event) {
@@ -70,8 +70,8 @@ function selectHandler(event) {
   }
 
   renderMedia();
-  
 
-  
+
+
 
 //--------------------FUNCTION CALLS
