@@ -119,3 +119,28 @@ Dylan and Kyel will approve merge requests to main once daily during the daily t
 | renderMediaForLater()            | mediaArray                                                 | renders saved for later list to DOM                                                        | HTMLCollection; canvas#watch-later-list |
 | quizFormHandler()                | event, dom element input:prefGenreprefMediaType,prefDecade | takes preferences and filters list from localStorage, parses, and presents to User in HTML | DOM list element                        |
 | selectMediaHandler()             | event                                                      | takes selected movie/show from filtered list and adds to localStorage                      | localStorage entry                      |
+
+## Project Database
+
+| title                      | mediaType | genre  | year | src                 |
+|----------------------------|-----------|--------|------|---------------------|
+| Fight Club                 | Movie     | Drama  | 1999 | fightclub.jpg       |
+| The Dark Knight            | Movie     | Action | 2008 | darkknight.jpg      |
+| Forrest Gump               | Movie     | Drama  | 1994 | ForrestGump.jpg     |
+| Goodfellas                 | Movie     | Drama  | 1990 | goodfellas.jpg      |
+| Inception                  | Movie     | Action | 2010 | Inception.jpg       |
+| Pulp Fiction               | Movie     | Drama  | 1994 | pulpfiction.jpg     |
+| Se7en                      | Movie     | Drama  | 1995 | Se7en.jpg           |
+| The Shawshank Redemption   | Movie     | Drama  | 1994 | shawshank.jpg       |
+| The Godfather              | Movie     | Drama  | 1972 | thegodfather.jpg    |
+| The Matrix                 | Movie     | Action | 1999 | thematrix.jpg       |
+| Avatar: The Last Airbender | TV Show   | Action | 2005 | avatarairbender.jpg |
+| The Mandalorian            | TV Show   | Action | 2019 | themandalorian.jpg  |
+| Succession                 | TV Show   | Drama  | 2018 | succession.jpg      |
+| The Sopranos               | TV Show   | Drama  | 1999 | sopranos.jpg        |
+| House                      | TV Show   | Drama  | 2004 | house.jpg           |
+| Breaking Bad               | TV Show   | Drama  | 2008 | breakingbad.jpg     |
+| Black Mirror               | TV Show   | Drama  | 2011 | blackmirror.jpg     |
+| Better Call Saul           | TV Show   | Drama  | 2015 | bettercallsaul.jpg  |
+| Battlestar Galactica       | TV Show   | Action | 2004 | battlestar.jpg      |
+| Game of Thrones            | TV Show   | Action | 2011 | gameofthrones.jpg   |
