@@ -48,7 +48,7 @@ function sessionIdGenerator() {
 
 function createMediaObjects() {
     mediaObjectsArray.forEach(mediaObject=>{
-        eval(`let ${window[mediaObject.name] = new Media(mediaObject.name, mediaObject.mediaType, mediaObject.genre, mediaObject.year)}`);
+        window[`${mediaObject.name}`] = new Media(mediaObject.name, mediaObject.mediaType, mediaObject.genre, mediaObject.year);
     })
 }
 
