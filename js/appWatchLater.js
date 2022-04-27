@@ -10,9 +10,6 @@ let mediaArray = [];
 //--------------------DOM REFERENCES
 const quizResultsContainer = document.getElementById('quiz-results');
 const watchLaterContainer = document.getElementById('watch-later-list');
-
-
-
   
 
   
