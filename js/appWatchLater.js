@@ -1,6 +1,8 @@
 'use strict'
 
 //--------------------GLOBAL VARIABLES/IMPORTS
+const mediaObjectsArray = [];
+
 let mediaArray = [];
 
   
@@ -10,7 +12,7 @@ let mediaArray = [];
 //--------------------DOM REFERENCES
 const quizResultsContainer = document.getElementById('quiz-results');
 const watchLaterContainer = document.getElementById('watch-later-list');
-  
+const quizFormContainer = document.querySelector('movie-quiz');
 
   
 
@@ -43,12 +45,16 @@ function sessionIdGenerator() {
 
 
 //--------------------FUNCTIONS
+
+function createMediaObjects() {
+    mediaObjectsArray.forEach(mediaObject=>{
+        eval(`let ${window[mediaObject.name] = new Media(mediaObject.name, mediaObject.mediaType, mediaObject.genre, mediaObject.year)}`);
+    })
+}
+
 function renderMediaForLater() {
 
-    let parentElement = document.querySelector('canvas #watch-later-list');
-
     let unorderedListElement = document.createElement('ul');
-    parentElement.appendChild(unorderedListElement);
 
     mediaArray.forEach(media => {
         let listElem = document.createElement('li');
@@ -58,8 +64,9 @@ function renderMediaForLater() {
             listImgElem.src = media.src;
             listImgElem.alt = media.name;
             listElem.appendChild(listImgElem);
+        unorderedListElement.appendChild(listElem);
         });
-    
+    quizFormContainer.appendChild(unorderedListElement);
 }
   
   
