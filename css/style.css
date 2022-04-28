@@ -6,7 +6,9 @@ body {
   width: 60vw;
   margin-left: auto;
   margin-right: auto;
-  background-color: #181818;
+  background-image: url(../img/filmreel.jpg);
+  background-color: #cccccc;
+   }
 }
 
 aside {
@@ -55,8 +57,7 @@ li a:hover{
 }
 
 h1 {
-  font-size: x-large;
-  font-size: 1rem;
+font-size: 2rem;
 }
 
 #boxparent{
@@ -82,7 +83,8 @@ h1 {
   font-size:larger;
   border-radius: 50px;
   text-align: center;
-  
+  opacity: 0.8;
+  filter: alpha(opacity=80);
 }
 .box {
   margin: 20px;
@@ -119,6 +121,8 @@ button:hover{
   display:flex; 
   margin: 0 auto;
   text-align:center;
+  background-color: transparent; 
+  
 }
 
 
@@ -134,7 +138,7 @@ button:hover{
 #filtered-list>* {
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   margin: 2em;
-  color: white;
+  color: #FACD3D;
   font-size: 10pt;
 }
 
@@ -152,10 +156,19 @@ button:hover{
 
 #filtered-list>*>button {
   width: 100px;
+  border: 2px solid #E60576;
+
+  
+  
+  
 }
 
 div#quiz-results>* {
   color: white;
+  background-color: transparent; 
+  border: 2px solid #E60576; 
+  border-radius: 5px; 
+  text-transform: uppercase; 
 }
 
 #dylanbox{
@@ -173,6 +186,12 @@ div#quiz-results>* {
   border: solid 5px #E60576;
   line-height:2;
   border-radius: 50px;
+  display: flex;
+  margin: auto;
+  flex-wrap: wrap;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+
 }
 #benbox{
   box-sizing: border-box;
@@ -189,6 +208,12 @@ div#quiz-results>* {
   border: solid 5px #E60576;
   line-height:2;
   border-radius: 50px;
+  display: flex;
+  margin: auto;
+  flex-wrap: wrap;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+
 }
 #kyelbox{
   box-sizing: border-box;
@@ -205,6 +230,12 @@ div#quiz-results>* {
   border: solid 5px #E60576;
   line-height:2;
   border-radius: 50px;
+  display: flex;
+  margin: auto;
+  flex-wrap: wrap;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+
 }
 #denisbox{
   box-sizing: border-box;
@@ -221,4 +252,10 @@ div#quiz-results>* {
   border: solid 5px #E60576;
   line-height:2;
   border-radius: 50px;
+  display: flex;
+  margin: auto;
+  flex-wrap: wrap;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+
 }
