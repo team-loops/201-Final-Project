@@ -259,3 +259,13 @@ div#quiz-results>* {
   filter: alpha(opacity=80);
 
 }
+footer {
+  /* background-color rgba(255, 100, 100, 0.4); */
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color: #ffffff;
+  border-top-color:#bbb;
+  opacity:0.5;
+  margin:auto;
+}
