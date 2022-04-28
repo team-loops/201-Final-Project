@@ -1,12 +1,8 @@
 'use strict'
 
 //--------------------GLOBAL VARIABLES/IMPORTS
-const mediaObjectsArray = [];
-
+let mediaObjectsArray = [];
 let mediaArray = [];
-
-
-
 
 
 //--------------------DOM REFERENCES
@@ -16,14 +12,7 @@ const quizFormContainer = document.getElementById('movie-quiz');
 quizFormContainer.addEventListener('submit', quizFormHandler);
 
 
-
-
 //--------------------CONSTRUCTORS
-
-
-
-
-
 
 
 //--------------------CONSTRUCTOR METHODS
@@ -36,11 +25,6 @@ function Media(name, mediaType, genre, year, src = '', alt = '', href = '') {
         this.alt = alt,
         this.href = href,
         mediaArray.push(this)
-}
-
-
-function sessionIdGenerator() {
-    return Math.floor(Math.random() * 100000);
 }
 
 
@@ -70,20 +54,19 @@ function renderMediaForLater() {
 }
 
 
-
-
-
 //--------------------EVENT LISTENERS
-
-
-
-
 
 
 
 //--------------------EVENT HANDLERS
 
 function quizFormHandler(event) {
+
+    let existingResults = document.querySelector('#filtered-list');
+    if (existingResults) {
+        existingResults.remove();
+    }
+
     // Event Listener for Submit button
     event.preventDefault();
     let prefMediaType = '';
@@ -129,6 +112,7 @@ function saveMediaForLater(event) {
 }
 
 function renderFilteredList(prefMediaType, prefGenre, prefDecade) {
+
     let filteredList = [];
     for (let i = 0; i < mediaArray.length; i++) {
         console.log(prefMediaType, prefGenre, prefDecade);
@@ -143,42 +127,43 @@ function renderFilteredList(prefMediaType, prefGenre, prefDecade) {
     console.log(filteredList);
 
     let unorderedListElem = document.createElement('ul');
+    if (!filteredList[0]) {
+        unorderedListElem = document.createElement('p');
+        unorderedListElem.textContent = 'No Results!';
+    } else {
+        filteredList.forEach(mediaObj => {
+            let listItemElem = document.createElement('li');
+            let titleElem = document.createElement('p');
+            let yearElem = document.createElement('p');
+            let genreElem = document.createElement('p');
+            let imgContainerElem = document.createElement('div');
+            let imgElem = document.createElement('img');
+            let saveButtonElem = document.createElement('button');
 
-    filteredList.forEach(mediaObj => {
-        let listItemElem = document.createElement('li');
-        let titleElem = document.createElement('p');
-        let yearElem = document.createElement('p');
-        let genreElem = document.createElement('p');
-        let imgElem = document.createElement('img');
-        let saveButtonElem = document.createElement('button');
-        titleElem.textContent = mediaObj.name;
-        yearElem.textContent = String(mediaObj.year);
-        genreElem.textContent = mediaObj.genre;
-        imgElem.src = mediaObj.src;
-        imgElem.alt = mediaObj.name.replace(' ','');
-        saveButtonElem.textContent = 'Save For Later';
-        saveButtonElem.id = mediaObj.src;
-        saveButtonElem.addEventListener('click', saveMediaForLater);
-        listItemElem.appendChild(titleElem);
-        listItemElem.appendChild(yearElem);
-        listItemElem.appendChild(genreElem);
-        listItemElem.appendChild(imgElem);
-        listItemElem.appendChild(saveButtonElem);
-        unorderedListElem.appendChild(listItemElem);
-    });
+            titleElem.textContent = mediaObj.name;
+            yearElem.textContent = String(mediaObj.year);
+            genreElem.textContent = mediaObj.genre;
+            imgElem.src = mediaObj.src;
+            imgElem.alt = mediaObj.name.replace(' ', '');
+            imgContainerElem.className = 'img-container';
+            imgContainerElem.appendChild(imgElem);
+            saveButtonElem.textContent = 'Save For Later';
+            saveButtonElem.id = mediaObj.src;
+            saveButtonElem.addEventListener('click', saveMediaForLater);
+
+            listItemElem.appendChild(saveButtonElem);
+            listItemElem.appendChild(titleElem);
+            listItemElem.appendChild(yearElem);
+            listItemElem.appendChild(genreElem);
+            listItemElem.appendChild(imgContainerElem);
+            unorderedListElem.appendChild(listItemElem);
+        });
+    }
+
+    unorderedListElem.id = 'filtered-list';
     quizResultsContainer.appendChild(unorderedListElem);
     console.log(quizResultsContainer);
 }
-
-
-// function selectMediaHandler(event) {
-//     event.preventDefault();
-
-//     let selectedMedia = mediaArray.filter(mediaObj => mediaObj[`${event.target.name.value}`]);
-//     localStorage.setItem('selected-media', JSON.stringify(selectedMedia));
-// }
-
-
 
 
 //--------------------FUNCTION CALLS
