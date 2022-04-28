@@ -124,3 +124,6 @@ button:hover{
   text-align:center;
 }
 
+div#quiz-results>* {
+  color: white;
+}

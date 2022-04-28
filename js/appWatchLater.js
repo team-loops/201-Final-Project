@@ -116,8 +116,16 @@ function quizFormHandler(event) {
     renderFilteredList(prefMediaType, prefGenre, prefDecade);
 }
 
-function saveMediaForLater(mediaObject) {
-    localStorage.setItem(mediaObject.name, JSON.stringify(mediaObject));
+function saveMediaForLater(event) {
+    console.log(event.target.id);
+    let savedMovie = {};
+    for (let i = 0; i < mediaArray.length; i++) {
+        console.log(mediaArray);
+        if (mediaArray[i].src === event.target.id) {
+            savedMovie = mediaArray[i];
+        }
+    }
+    localStorage.setItem(savedMovie.name, JSON.stringify(savedMovie));
 }
 
 function renderFilteredList(prefMediaType, prefGenre, prefDecade) {
@@ -141,29 +149,34 @@ function renderFilteredList(prefMediaType, prefGenre, prefDecade) {
         let titleElem = document.createElement('p');
         let yearElem = document.createElement('p');
         let genreElem = document.createElement('p');
+        let imgElem = document.createElement('img');
         let saveButtonElem = document.createElement('button');
         titleElem.textContent = mediaObj.name;
         yearElem.textContent = String(mediaObj.year);
         genreElem.textContent = mediaObj.genre;
+        imgElem.src = mediaObj.src;
+        imgElem.alt = mediaObj.name.replace(' ','');
         saveButtonElem.textContent = 'Save For Later';
         saveButtonElem.id = mediaObj.src;
-        saveButtonElem.addEventListener('click', saveMediaForLater(mediaObj));
+        saveButtonElem.addEventListener('click', saveMediaForLater);
         listItemElem.appendChild(titleElem);
         listItemElem.appendChild(yearElem);
         listItemElem.appendChild(genreElem);
+        listItemElem.appendChild(imgElem);
         listItemElem.appendChild(saveButtonElem);
         unorderedListElem.appendChild(listItemElem);
     });
     quizResultsContainer.appendChild(unorderedListElem);
+    console.log(quizResultsContainer);
 }
 
 
-function selectMediaHandler(event) {
-    event.preventDefault();
+// function selectMediaHandler(event) {
+//     event.preventDefault();
 
-    let selectedMedia = mediaArray.filter(mediaObj => mediaObj[`${event.target.name.value}`]);
-    localStorage.setItem('selected-media', JSON.stringify(selectedMedia));
-}
+//     let selectedMedia = mediaArray.filter(mediaObj => mediaObj[`${event.target.name.value}`]);
+//     localStorage.setItem('selected-media', JSON.stringify(selectedMedia));
+// }
 
 
 
