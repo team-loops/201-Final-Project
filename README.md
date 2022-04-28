@@ -6,7 +6,7 @@
 
 [Domain Model](https://lucid.app/lucidchart/ef049ad0-aa31-479f-a15a-59507df6d488/edit?invitationId=inv_923e738e-2fcb-48d1-94c1-27479c612050)
 
-[WIP: Presentation Deck](https://docs.google.com/presentation/d/13UJRMsdqCttUrB8j-DjDg0G2osM-tSj-Pag_4VZMDjI/edit#slide=id.g125996a3fb6_0_127)
+[Presentation Deck](https://docs.google.com/presentation/d/1sBR5Oj1Tplxa6CRZ8JbDcvKBcovtvwVqWte0oPlhlqg/edit#slide=id.g125996a3fb6_0_127)
 
 ## Deadlines
 

@@ -1,12 +1,20 @@
-
 body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 960px;
+  width: 60vw;
   margin-left: auto;
   margin-right: auto;
-  background-color: #181818;
+  background-image: url(../img/filmreel.jpg);
+  background-color: #cccccc;
+}
+
+aside {
+  width: 20vw;
+}
+
+header {
+  width: auto;
 }
 
 nav {
@@ -28,16 +36,18 @@ nav {
   padding: 14px 16px;
   
 }
+
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #000000;
 }
+
 li {
   float: left;
 }
+
 li a {
   display: inline-block;
   color: white;
@@ -51,20 +61,30 @@ li a:hover{
 }
 
 h1 {
-  font-size: x-large;
-  font-size: 1rem;
+font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+fieldset {
+  display: flex;
+  justify-content: center;
 }
 
 #boxparent{
   display: flex;
   flex-direction: column;
 }
+
 .boxdiv{
   display: flex;
-  margin: auto;
-  flex-wrap: wrap;
-
+  gap: 10px;
+  justify-content: center;
 }
+
 .box {
   height: 200px;
   width: 250px;
@@ -78,110 +98,120 @@ h1 {
   font-size:larger;
   border-radius: 50px;
   text-align: center;
-  
-}
-.box {
-  margin: 20px;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
 }
 
-.leg {
-  padding: 20px 0 50px;
-  height: 20px;
-  width: 500px;
-  text-align: center;
+legend {
+  display: flex;
+  justify-content: center;
+  margin: 30px auto;
   font-size: 25px;
   color:#FACD3D;
-  margin: auto;
 }
-/* See results buttom */
+
 .active{
-  margin: auto;
+  margin: 10px auto;
   width: 200px;
   padding: 22px; ;
   color: #FACD3D;
   background-color: transparent; 
   border: 2px solid #E60576; 
   border-radius: 5px; 
-  text-transform: uppercase; 
- 
-   
+  text-transform: uppercase;   
 }
+
 button:hover{
   background-color: #5626C4;
-
 }
 
 #buttonresults {
   display:flex; 
   margin: 0 auto;
   text-align:center;
+  background-color: transparent; 
+}
+
+#filtered-list {
+  display: flex;
+  flex-direction: row wrap;
+  justify-content: center;
+  align-items: flex-end;
+  align-content: flex-end;
+}
+
+#filtered-list,
+#filtered-list>* {
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  margin: 2em;
+  color: #FACD3D;
+  font-size: 10pt;
+}
+
+#filtered-list>li {
+  width: 100px;
+  height: 200px;
+  align-items: flex-end;
+  align-content: flex-end;
+}
+
+#filtered-list>*>.img-container>img {
+  height: 120px;
+  align-self: center;
+}
+
+#filtered-list>*>button {
+  width: 100px;
+  border: 2px solid #E60576;
 }
 
 div#quiz-results>* {
   color: white;
+  background-color: transparent; 
+  border: 2px solid #E60576; 
+  border-radius: 5px; 
+  text-transform: uppercase;
 }
 
-#dylanbox{
-  box-sizing: border-box;
-  float: left;
-  width: 45%;
-  padding: 40px;
-  padding-left:70px;
-  padding-right: 70px;
-  height: 475px;
-  margin:auto;
-  margin-right:30px;
-  margin-bottom: 70px;
-  background-color: #e1e1dd;
-  border: solid 5px #E60576;
-  line-height:2;
-  border-radius: 50px;
+.profilecolumn {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
-#benbox{
-  box-sizing: border-box;
-  float: left;
-  width: 45%;
-  padding: 40px;
-  padding-left:70px;
-  padding-right: 70px;
-  height: 475px;
-  margin:auto;
-  margin-right:30px;
-  margin-bottom: 70px;
+
+.dev-profiles {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: content-box;
+  max-width: 325px;
+  min-height: 450px;
+  padding: 35px;
   background-color: #e1e1dd;
   border: solid 5px #E60576;
   line-height:2;
   border-radius: 50px;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
 }
-#kyelbox{
-  box-sizing: border-box;
-  float: left;
-  width: 45%;
-  padding: 40px;
-  padding-left:70px;
-  padding-right: 70px;
-  height: 475px;
-  margin:auto;
-  margin-right:30px;
-  margin-bottom: 70px;
-  background-color: #e1e1dd;
-  border: solid 5px #E60576;
-  line-height:2;
-  border-radius: 50px;
+
+.dev-profiles>p {
+  flex: 1;
 }
-#denisbox{
-  box-sizing: border-box;
-  float: left;
-  width: 45%;
-  padding: 40px;
-  padding-left:70px;
-  padding-right: 70px;
-  height: 475px;
+
+.profile-pics {
+  width: 175px;
+  height: 175px;
+  border-radius: 100%;
+  margin: auto;
+}
+
+footer {
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color: #ffffff;
+  border-top-color:#bbb;
+  opacity:0.5;
   margin:auto;
-  margin-right:30px;
-  margin-bottom: 70px;
-  background-color: #e1e1dd;
-  border: solid 5px #E60576;
-  line-height:2;
-  border-radius: 50px;
 }
