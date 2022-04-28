@@ -2,6 +2,10 @@
 
 [Trello Board Link](https://trello.com/b/th8LnLjG/team-loops)
 
+[Wireframe](https://www.figma.com/file/at72rZR08hbLJHwdvZdaKp/team-loops?node-id=0%3A1)
+
+[Domain Model](https://lucid.app/lucidchart/ef049ad0-aa31-479f-a15a-59507df6d488/edit?invitationId=inv_923e738e-2fcb-48d1-94c1-27479c612050)
+
 [WIP: Presentation Deck](https://docs.google.com/presentation/d/13UJRMsdqCttUrB8j-DjDg0G2osM-tSj-Pag_4VZMDjI/edit#slide=id.g125996a3fb6_0_127)
 
 ## Deadlines
@@ -103,3 +107,40 @@ All team members have cloned the project repo in their personal projects folder.
 All teammembers will review the pull request to the main branch at the end of the work day.
 
 Dylan and Kyel will approve merge requests to main once daily during the daily team meeting.
+
+
+## JavaScript Functions
+
+| function                         | input(s)                                                   | process                                                                                    | output(s)                               |
+|----------------------------------|------------------------------------------------------------|--------------------------------------------------------------------------------------------|-----------------------------------------|
+| Consturctor function new Movie() | name, mediaType, genre, year                               | creates new Movie Object                                                                   | new Movie                               |
+| addMovieToLocalStorage           | Movie Object                                               | stringifies Movie Object, adds to local storage                                            | localStorage entry                      |
+| selectHandler()                  | HTML event                                                 | takes event.tgt and adds to moviesArray                                                    | entry to moviesArray                    |
+| renderMediaForLater()            | mediaArray                                                 | renders saved for later list to DOM                                                        | HTMLCollection; canvas#watch-later-list |
+| quizFormHandler()                | event, dom element input:prefGenreprefMediaType,prefDecade | takes preferences and filters list from localStorage, parses, and presents to User in HTML | DOM list element                        |
+| selectMediaHandler()             | event                                                      | takes selected movie/show from filtered list and adds to localStorage                      | localStorage entry                      |
+
+## Project Database
+
+| title                      | mediaType | genre  | year | src                 |
+|----------------------------|-----------|--------|------|---------------------|
+| Fight Club                 | Movie     | Drama  | 1999 | fightclub.jpg       |
+| The Dark Knight            | Movie     | Action | 2008 | darkknight.jpg      |
+| Forrest Gump               | Movie     | Drama  | 1994 | ForrestGump.jpg     |
+| Goodfellas                 | Movie     | Drama  | 1990 | goodfellas.jpg      |
+| Inception                  | Movie     | Action | 2010 | Inception.jpg       |
+| Pulp Fiction               | Movie     | Drama  | 1994 | pulpfiction.jpg     |
+| Se7en                      | Movie     | Drama  | 1995 | Se7en.jpg           |
+| The Shawshank Redemption   | Movie     | Drama  | 1994 | shawshank.jpg       |
+| The Godfather              | Movie     | Drama  | 1972 | thegodfather.jpg    |
+| The Matrix                 | Movie     | Action | 1999 | thematrix.jpg       |
+| Avatar: The Last Airbender | TV Show   | Action | 2005 | avatarairbender.jpg |
+| The Mandalorian            | TV Show   | Action | 2019 | themandalorian.jpg  |
+| Succession                 | TV Show   | Drama  | 2018 | succession.jpg      |
+| The Sopranos               | TV Show   | Drama  | 1999 | sopranos.jpg        |
+| House                      | TV Show   | Drama  | 2004 | house.jpg           |
+| Breaking Bad               | TV Show   | Drama  | 2008 | breakingbad.jpg     |
+| Black Mirror               | TV Show   | Drama  | 2011 | blackmirror.jpg     |
+| Better Call Saul           | TV Show   | Drama  | 2015 | bettercallsaul.jpg  |
+| Battlestar Galactica       | TV Show   | Action | 2004 | battlestar.jpg      |
+| Game of Thrones            | TV Show   | Action | 2011 | gameofthrones.jpg   |

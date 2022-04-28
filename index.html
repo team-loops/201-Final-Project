@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Watch Later</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>PRIME FLIX</h1>
+      <ul id="nav-links">
+       <li><a href="index.html"class="hover">Home</a></li>
+       <li><a href="pages/about.html"class="hover">About</a></li>
+       <li><a href="pages/watchlater.html"class="hover">Watch Later</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <form id="movie-quiz">
+      <fieldset>
+        <legend class="leg">Answer the questions below to recieve your customized suggestions!</legend>
+        
+        <div id="boxparent">
+          <div class="boxdiv">
+          <section class="box"> 
+
+              <h2>Movie or TV Show</h2>
+              
+              <input type="radio" name="media-type" id="rd-movie">
+              <label for="prefMediaType">Movie</label>
+              
+              <input type="radio" name="media-type" id="rd-tv">
+              <label for="prefMediaType">TV Show</label>
+              
+            </section>
+            <section class="box">
+              <h2>Preferred Genre</h2>
+              
+              <input type="radio" name="genre" id="rd-drama">
+              <label for="prefGenre">Drama</label>
+              
+              <input type="radio" name="genre" id="rd-action">
+              <label for="prefGenre">Action</label>
+              
+            </section>
+            <section class="box"> 
+              <h2>Release Decade</h2>
+              
+              <input type="radio" name="date" id="rd-1980">
+              <label for="prefDecade">1980s</label>
+              
+              <input type="radio" name="date" id="rd-1990">
+              <label for="prefDecade">1990s</label>
+              
+              <input type="radio" name="date" id="rd-2000">
+              <label for="prefDecade">2000s</label>
+              
+              <input type="radio" name="date" id="rd-2010">
+              <label for="prefDecade">2010s</label>
+              
+            </section>
+          </div>
+            
+            <button type="submit"class="active">See Results</button>
+        </div>
+      </fieldset>
+    </form>
+    <div id="quiz-results"></div>
+  </main>
+  <footer>
+    <cite>team-loops</cite>
+  </footer>
+  <script src="./js/appWatchLater.js"></script>
+</body>
+</html>
