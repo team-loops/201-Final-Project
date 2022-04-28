@@ -63,12 +63,19 @@ font-size: 2rem;
 #boxparent{
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+
 }
 .boxdiv{
   display: flex;
   margin: auto;
   flex-wrap: wrap;
 
+}
+#input1{
+  text-align: center;
+  flex-wrap: wrap;
+  margin: auto;
 }
 .box {
   height: 200px;
