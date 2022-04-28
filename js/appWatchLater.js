@@ -3,6 +3,7 @@
 //--------------------GLOBAL VARIABLES/IMPORTS
 let mediaObjectsArray = [];
 let mediaArray = [];
+let savedMediaList = [];
 
 
 //--------------------DOM REFERENCES
@@ -108,7 +109,10 @@ function saveMediaForLater(event) {
             savedMovie = mediaArray[i];
         }
     }
-    localStorage.setItem(savedMovie.name, JSON.stringify(savedMovie));
+    savedMediaList.push(savedMovie);
+    
+    localStorage.removeItem('saved-items');
+    localStorage.setItem('saved-items',JSON.stringify(savedMediaList));
 }
 
 function renderFilteredList(prefMediaType, prefGenre, prefDecade) {
