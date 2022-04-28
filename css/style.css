@@ -3,10 +3,14 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 960px;
+  width: 60vw;
   margin-left: auto;
   margin-right: auto;
   background-color: #181818;
+}
+
+aside {
+  width: 20vw;
 }
 
 nav {
@@ -33,7 +37,7 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #000000;
+  /* background-color: #000000; */
 }
 li {
   float: left;
@@ -115,6 +119,39 @@ button:hover{
   display:flex; 
   margin: 0 auto;
   text-align:center;
+}
+
+
+#filtered-list {
+  display: flex;
+  flex-direction: row wrap;
+  justify-content: center;
+  align-items: flex-end;
+  align-content: flex-end;
+}
+
+#filtered-list,
+#filtered-list>* {
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  margin: 2em;
+  color: white;
+  font-size: 10pt;
+}
+
+#filtered-list>li {
+  width: 100px;
+  height: 200px;
+  align-items: flex-end;
+  align-content: flex-end;
+}
+
+#filtered-list>*>.img-container>img {
+  height: 120px;
+  align-self: center;
+}
+
+#filtered-list>*>button {
+  width: 100px;
 }
 
 div#quiz-results>* {
