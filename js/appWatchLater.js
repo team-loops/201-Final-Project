@@ -100,16 +100,24 @@ function quizFormHandler(event) {
 function saveMediaForLater(event) {
     console.log(event.target.id);
     let savedMovie = {};
-    for (let i = 0; i < mediaArray.length; i++) {
-        console.log(mediaArray);
-        if (mediaArray[i].src === event.target.id) {
-            savedMovie = mediaArray[i];
+    let savedForLaterList = JSON.parse(localStorage.getItem('saved-items'));
+    let isInSavedList = false;
+    for (let i = 0; i < savedForLaterList.length; i++) {
+        if (savedForLaterList[i].src === event.target.id) {
+            isInSavedList = true;
         }
     }
-    savedMediaList.push(savedMovie);
-    
-    localStorage.removeItem('saved-items');
-    localStorage.setItem('saved-items',JSON.stringify(savedMediaList));
+    if (isInSavedList === false) {
+        for (let i = 0; i < mediaArray.length; i++) {
+            console.log(mediaArray);
+            if (mediaArray[i].src === event.target.id) {
+                savedMovie = mediaArray[i];
+            }
+        }
+        savedMediaList.push(savedMovie);
+        localStorage.removeItem('saved-items');
+        localStorage.setItem('saved-items',JSON.stringify(savedMediaList));
+    }
 }
 
 function renderFilteredList(prefMediaType, prefGenre, prefDecade) {
