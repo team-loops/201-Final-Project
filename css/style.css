@@ -155,8 +155,9 @@ button:hover{
   align-content: flex-end;
 }
 
-#filtered-list>*>.img-container>img {
+.img-container>img {
   height: 120px;
+  width: auto;
   align-self: center;
 }
 
