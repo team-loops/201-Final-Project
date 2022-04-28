@@ -5,10 +5,8 @@ let mediaObjectsArray = [];
 let mediaArray = [];
 let savedMediaList = [];
 
-
 //--------------------DOM REFERENCES
 const quizResultsContainer = document.getElementById('quiz-results');
-const watchLaterContainer = document.getElementById('watch-later-list');
 const quizFormContainer = document.getElementById('movie-quiz');
 quizFormContainer.addEventListener('submit', quizFormHandler);
 
@@ -37,23 +35,22 @@ function createMediaObjects() {
     })
 }
 
-function renderMediaForLater() {
+// function renderMediaForLater() {
 
-    let unorderedListElement = document.createElement('ul');
+//     let unorderedListElement = document.createElement('ul');
 
-    mediaArray.forEach(media => {
-        let listElem = document.createElement('li');
-        listElem.textContent = media.name;
-        listElem.id = media.name;
-        let listImgElem = document.createElement('img');
-        listImgElem.src = media.src;
-        listImgElem.alt = media.name;
-        listElem.appendChild(listImgElem);
-        unorderedListElement.appendChild(listElem);
-    });
-    quizFormContainer.appendChild(unorderedListElement);
-}
-
+//     mediaArray.forEach(media => {
+//         let listElem = document.createElement('li');
+//         listElem.textContent = media.name;
+//         listElem.id = media.name;
+//         let listImgElem = document.createElement('img');
+//         listImgElem.src = media.src;
+//         listImgElem.alt = media.name;
+//         listElem.appendChild(listImgElem);
+//         unorderedListElement.appendChild(listElem);
+//     });
+//     quizFormContainer.appendChild(unorderedListElement);
+// }
 
 //--------------------EVENT LISTENERS
 
@@ -172,23 +169,23 @@ function renderFilteredList(prefMediaType, prefGenre, prefDecade) {
 
 //--------------------FUNCTION CALLS
 
-let Media1 = new Media("Fight Club", "Movie", "Drama", 1999, './img/fightclub.jpg');
-let Media2 = new Media("The Dark Knight", "Movie", "Action", 2008, './img/darkknight.jpg');
-let Media3 = new Media("Forrest Gump", "Movie", "Drama", 1994, './img/ForrestGump.jpg');
-let Media4 = new Media("Goodfellas", "Movie", "Drama", 1990, './img/goodfellas.jpg');
-let Media5 = new Media("Inception", "Movie", "Action", 2010, './img/Inception.jpg');
-let Media6 = new Media("Pulp Fiction", "Movie", "Drama", 1994, './img/pulpfiction.jpg');
-let Media7 = new Media("Se7en", "Movie", "Drama", 1995, './img/Se7en.jpg');
-let Media8 = new Media("The Shawshank Redemption", "Movie", "Drama", 1994, './img/shawshank.jpg');
-let Media9 = new Media("The Godfather", "Movie", "Drama", 1972, './img/thegodfather.jpg');
-let Media10 = new Media("The Matrix", "Movie", "Action", 1999, './img/thematrix.jpg');
-let Media11 = new Media("Avatar: The Last Airbender", "TV", "Action", 2005, './img/avatarairbender.jpg');
-let Media12 = new Media("The Mandalorian", "TV", "Action", 2019, './img/themandalorian.jpg');
-let Media13 = new Media("Succession", "TV", "Drama", 2018, './img/succession.jpg');
-let Media14 = new Media("The Sopranos", "TV", "Drama", 1999, './img/sopranos.jpg');
-let Media15 = new Media("House", "TV", "Drama", 2004, './img/house.jpg');
-let Media16 = new Media("Breaking Bad", "TV", "Drama", 2008, './img/breakingbad.jpg');
-let Media17 = new Media("Black Mirror", "TV", "Drama", 2011, './img/blackmirror.jpg');
-let Media18 = new Media("Better Call Saul", "TV", "Drama", 2015, './img/bettercallsaul.jpg');
-let Media19 = new Media("Battlestar Galactica", "TV", "Action", 2004, './img/battlestar.jpg');
-let Media20 = new Media("Game of Thrones", "TV", "Action", 2011, './img/gameofthrones.jpg');
+let Media1 = new Media("Fight Club", "Movie", "Drama", 1999, '../img/fightclub.jpg');
+let Media2 = new Media("The Dark Knight", "Movie", "Action", 2008, '../img/darkknight.jpg');
+let Media3 = new Media("Forrest Gump", "Movie", "Drama", 1994, '../img/ForrestGump.jpg');
+let Media4 = new Media("Goodfellas", "Movie", "Drama", 1990, '../img/goodfellas.jpg');
+let Media5 = new Media("Inception", "Movie", "Action", 2010, '../img/Inception.jpg');
+let Media6 = new Media("Pulp Fiction", "Movie", "Drama", 1994, '../img/pulpfiction.jpg');
+let Media7 = new Media("Se7en", "Movie", "Drama", 1995, '../img/Se7en.jpg');
+let Media8 = new Media("The Shawshank Redemption", "Movie", "Drama", 1994, '../img/shawshank.jpg');
+let Media9 = new Media("The Godfather", "Movie", "Drama", 1972, '../img/thegodfather.jpg');
+let Media10 = new Media("The Matrix", "Movie", "Action", 1999, '../img/thematrix.jpg');
+let Media11 = new Media("Avatar: The Last Airbender", "TV", "Action", 2005, '../img/avatarairbender.jpg');
+let Media12 = new Media("The Mandalorian", "TV", "Action", 2019, '../img/themandalorian.jpg');
+let Media13 = new Media("Succession", "TV", "Drama", 2018, '../img/succession.jpg');
+let Media14 = new Media("The Sopranos", "TV", "Drama", 1999, '../img/sopranos.jpg');
+let Media15 = new Media("House", "TV", "Drama", 2004, '../img/house.jpg');
+let Media16 = new Media("Breaking Bad", "TV", "Drama", 2008, '../img/breakingbad.jpg');
+let Media17 = new Media("Black Mirror", "TV", "Drama", 2011, '../img/blackmirror.jpg');
+let Media18 = new Media("Better Call Saul", "TV", "Drama", 2015, '../img/bettercallsaul.jpg');
+let Media19 = new Media("Battlestar Galactica", "TV", "Action", 2004, '../img/battlestar.jpg');
+let Media20 = new Media("Game of Thrones", "TV", "Action", 2011, '../img/gameofthrones.jpg');
