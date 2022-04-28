@@ -59,16 +59,14 @@ h1 {
   font-size: 1rem;
 }
 
-#movie-quiz {
-  
-}
 #boxparent{
   display: flex;
   flex-direction: column;
 }
-#boxdiv{
+.boxdiv{
   display: flex;
   margin: auto;
+  flex-wrap: wrap;
 
 }
 .box {
@@ -96,9 +94,8 @@ h1 {
   width: 500px;
   text-align: center;
   font-size: 25px;
-  color:#FACD3D ;
-  
- 
+  color:#FACD3D;
+  margin: auto;
 }
 /* See results buttom */
 .active{
@@ -122,8 +119,4 @@ button:hover{
   display:flex; 
   margin: 0 auto;
   text-align:center;
-}
-
-div#quiz-results>* {
-  color: white;
 }
