@@ -1,9 +1,11 @@
 'use strict'
+
+//--------------------DOM REFERENCES
 const watchLaterContainer = document.getElementById('watch-later-list');
+
+//--------------------GLOBAL VARIABLES/IMPORTS
 let fetchedMedia = localStorage.getItem('saved-items');
 let parsedMedia = JSON.parse(fetchedMedia);
-
-console.log(parsedMedia);
 
 function renderSavedForLater() {
 
