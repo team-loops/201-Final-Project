@@ -10,11 +10,7 @@ const quizResultsContainer = document.getElementById('quiz-results');
 const quizFormContainer = document.getElementById('movie-quiz');
 quizFormContainer.addEventListener('submit', quizFormHandler);
 
-
-//--------------------CONSTRUCTORS
-
-
-//--------------------CONSTRUCTOR METHODS
+//--------------------CONSTRUCTOR
 function Media(name, mediaType, genre, year, src = '', alt = '', href = '') {
     this.name = name,
         this.mediaType = mediaType,
@@ -26,37 +22,12 @@ function Media(name, mediaType, genre, year, src = '', alt = '', href = '') {
         mediaArray.push(this)
 }
 
-
 //--------------------FUNCTIONS
-
 function createMediaObjects() {
     mediaObjectsArray.forEach(mediaObject => {
         window[`${mediaObject.name}`] = new Media(mediaObject.name, mediaObject.mediaType, mediaObject.genre, mediaObject.year);
     })
 }
-
-// function renderMediaForLater() {
-
-//     let unorderedListElement = document.createElement('ul');
-
-//     mediaArray.forEach(media => {
-//         let listElem = document.createElement('li');
-//         listElem.textContent = media.name;
-//         listElem.id = media.name;
-//         let listImgElem = document.createElement('img');
-//         listImgElem.src = media.src;
-//         listImgElem.alt = media.name;
-//         listElem.appendChild(listImgElem);
-//         unorderedListElement.appendChild(listElem);
-//     });
-//     quizFormContainer.appendChild(unorderedListElement);
-// }
-
-//--------------------EVENT LISTENERS
-
-
-
-//--------------------EVENT HANDLERS
 
 function quizFormHandler(event) {
 
@@ -92,17 +63,13 @@ function quizFormHandler(event) {
     } else if (document.getElementById('rd-2010').checked) {
         prefDecade = 2010;
     }
-    console.log(prefMediaType, prefGenre, prefDecade);
-
     renderFilteredList(prefMediaType, prefGenre, prefDecade);
 }
 
 function saveMediaForLater(event) {
-    console.log(event.target.id);
     let savedMovie = {};
 
     for (let i = 0; i < mediaArray.length; i++) {
-        console.log(mediaArray);
         if (mediaArray[i].src === event.target.id) {
             savedMovie = mediaArray[i];
         }
@@ -116,16 +83,12 @@ function renderFilteredList(prefMediaType, prefGenre, prefDecade) {
 
     let filteredList = [];
     for (let i = 0; i < mediaArray.length; i++) {
-        console.log(prefMediaType, prefGenre, prefDecade);
-        console.log(mediaArray[i]);
         if (mediaArray[i].mediaType === prefMediaType &&
             mediaArray[i].genre === prefGenre &&
             (prefDecade <= mediaArray[i].year && mediaArray[i].year <= (prefDecade + 9))) {
             filteredList.push(mediaArray[i])
         }
     }
-
-    console.log(filteredList);
 
     let unorderedListElem = document.createElement('ul');
     if (!filteredList[0]) {
@@ -163,12 +126,9 @@ function renderFilteredList(prefMediaType, prefGenre, prefDecade) {
 
     unorderedListElem.id = 'filtered-list';
     quizResultsContainer.appendChild(unorderedListElem);
-    console.log(quizResultsContainer);
 }
 
-
-//--------------------FUNCTION CALLS
-
+//--------------------Object List
 let Media1 = new Media("Fight Club", "Movie", "Drama", 1999, './img/fightclub.jpg');
 let Media2 = new Media("The Dark Knight", "Movie", "Action", 2008, './img/darkknight.jpg');
 let Media3 = new Media("Forrest Gump", "Movie", "Drama", 1994, './img/ForrestGump.jpg');
